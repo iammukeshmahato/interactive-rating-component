@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+   --White: hsl(0, 0%, 100%);
+   --Light-Grey: hsl(217, 12%, 63%);
+   --Medium-Grey: hsl(216, 12%, 54%);
+   /* --Medium-Grey: hsl(220, 10%, 23%); */
+   --Dark-Blue: hsl(213, 19%, 18%);
+   /* --Dark-Blue: hsl(212, 29%, 13%); */
+   --Very-Dark-Blue: hsl(216, 12%, 8%);
+   --Orange: hsl(25, 97%, 53%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Overpass", sans-serif;
+}
+
+body {
+   background-color: var(--Very-Dark-Blue);
+}
+
+main {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: aliceblue;
+}
+
+.card {
+   background-color: var(--Dark-Blue);
+   width: 25.5rem;
+   height: 26rem;
+   border-radius: 1.375rem;
+   padding: 2rem;
+   margin-top: 4px;
+}
+
+.star {
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   background: url("./images/icon-star.svg") no-repeat center;
+   background-color: hsl(213, 19%, 28%);
+}
+
+.heading {
+   margin: 2.125rem 0 0.5rem 0;
+   font-size: 1.75rem;
+   color: var(--White);
+}
+
+.desc {
+   font-size: 15px;
+   color: var(--Light-Grey);
+   line-height: 1.6;
+}
+
+.review {
+   display: flex;
+   justify-content: space-between;
+   padding: 1.75rem 0 2.0625rem;
+   padding-right: 0.24rem;
+}
+
+.review button {
+   border: none;
+   height: 3.125rem;
+   width: 3.125rem;
+   border-radius: 50%;
+   background-color: hsl(213, 19%, 28%);
+   color: var(--Light-Grey);
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+.review button:hover {
+   background-color: var(--Orange);
+}
+
+.review button:focus {
+   background-color: var(--Light-Grey);
+   color: var(--White);
+}
+
+.submit {
+   border: none;
+   height: 2.8125rem;
+   width: 100%;
+   border-radius: 2rem;
+   background-color: var(--Orange);
+   color: var(--White);
+   font-weight: 700;
+   letter-spacing: 2px;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+.submit:hover {
+   background-color: var(--White);
+   color: var(--Orange);
+}
+
+.thankyou-card {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   display: none;
+}
+
+.thankyou-card .rating {
+   color: var(--Orange);
+   margin: 32px 0 36px;
+   padding: 0.375rem 1rem;
+   border-radius: 1rem;
+   background-color: hsl(213, 19%, 28%);
+   font-weight: normal;
+}
+
+.thankyou-text {
+   font-weight: 400;
+   margin: 0 0 10px 0;
+}
+
+.thanku-desc {
+   padding-right: 2px;
+}
+
+@media (max-width: 450px) {
+   .card {
+      width: 328px;
+      padding: 28px;
+      margin: 1rem;
+   }
+
+   .thankyou-card {
+      height: 358px;
+   }
+
+   .desc {
+      font-size: 14px;
+   }
+
+   .thankyou-card img {
+      width: 52%;
+   }
+
+   .thankyou-card .rating {
+      margin: 26px 0 24px;
+      padding: 0.375rem 1rem;
+   }
+
+   .thankyou-text {
+      font-size: 1.5rem;
+   }
+
+   .thanku-desc {
+      padding-right: 0px;
+   }
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+   color: orange;
+   padding: 0.5rem 0;
+}
+
+.attribution a {
+   color: hsl(228, 77%, 75%);
+}
