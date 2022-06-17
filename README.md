@@ -46,7 +46,7 @@ Users should be able to:
 
 ### Links
 
--  Solution URL: [Go to solution](https://your-solution-url.com)
+-  Solution URL: [Go to solution](https://www.frontendmentor.io/solutions/interactive-rating-component-using-html-css-and-js--56c5t4x-7)
 -  Live Site URL: [View Demo](https://iammukeshmahato.github.io/interactive-rating-component)
 
 ## ⚙ Built with
